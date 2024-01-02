@@ -14,8 +14,13 @@ public class LowerCase {
         String answer = "";
         for (int i = 0; i < s.length(); i++)
         {
-            
+            if (s.charAt(i) > 64 && s.charAt(i) < 91){
+                answer += (char)(s.charAt(i)+32);
+            }
+            else{
+                answer+= s.charAt(i);
+            }
         }
-        return null;
+        return answer;
     }
 }
