@@ -33,12 +33,12 @@ public class Calendar1 {
 	 		debugDaysCounter++;
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
-	 		if (debugDaysCounter == 36501) { 
+	 		if (debugDaysCounter == 999999) { 
 				System.out.println("Failed loop, debug activated");
 	 			break;
 	 		}
         }
-	 	System.out.println("During the 20th century," + sundayCounter + " Sundays fell on the first day of the month");
+	 	System.out.println("During the 20th century, " + sundayCounter + " Sundays fell on the first day of the month");
 	 }
 	
 	 // Advances the date (day, month, year) and the day-of-the-week.
@@ -69,8 +69,14 @@ public class Calendar1 {
 		 
     // Returns true if the given year is a leap year, false otherwise.
 	private static boolean isLeapYear(int year) {
-	     if (year % 4 == 0 && year % 400 == 0)
+		if (year % 4 == 0){
+			if (year % 400 != 0 && year % 100 == 0){
+				return false;
+			}
+			else{
 			return true;
+			}
+		}
 		return false;
 	}
 	 
