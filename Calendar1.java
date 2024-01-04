@@ -20,9 +20,9 @@ public class Calendar1 {
 		int debugDaysCounter = 0; 
 		int sundayCounter = 0;
 	 	while (year != 1999 || month != 12 || dayOfMonth != 31) {
-	 		System.out.Println(dayOfMonth + "//" + month + "//" + year);
+	 		System.out.println(dayOfMonth + "//" + month + "//" + year);
 			if (dayofWeek == 1)
-				System.out.Print(" Sunday");
+				System.out.print(" Sunday");
 			if (dayOfWeek == 1 && dayOfMonth == 1)
 				sundayCounter++;
 	 		advance();
@@ -30,11 +30,11 @@ public class Calendar1 {
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
 	 		if (debugDaysCounter == 36501) { 
-				System.out.Println("Failed loop, debug activated");
+				System.out.println("Failed loop, debug activated");
 	 			break;
 	 		}
         }
-	 	System.out.Println("During the 20th century," + sundayCounter + " Sundays fell on the first day of the month");
+	 	System.out.println("During the 20th century," + sundayCounter + " Sundays fell on the first day of the month");
 	 }
 	
 	 // Advances the date (day, month, year) and the day-of-the-week.
