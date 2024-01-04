@@ -30,7 +30,7 @@ public class Calendar1 {
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
 	 		if (debugDaysCounter == 36501) { 
-				System.out.Println("Failed loop, debug activated")
+				System.out.Println("Failed loop, debug activated");
 	 			break;
 	 		}
         }
@@ -78,4 +78,5 @@ public class Calendar1 {
 			default:
 				return 0;
 	}
+    }   
 }
