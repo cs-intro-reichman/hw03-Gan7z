@@ -21,7 +21,7 @@ public class Calendar1 {
 		int sundayCounter = 0;
 	 	while (year != 1999 || month != 12 || dayOfMonth != 31) {
 	 		System.out.println(dayOfMonth + "//" + month + "//" + year);
-			if (dayofWeek == 1)
+			if (dayOfWeek == 1)
 				System.out.print(" Sunday");
 			if (dayOfWeek == 1 && dayOfMonth == 1)
 				sundayCounter++;
