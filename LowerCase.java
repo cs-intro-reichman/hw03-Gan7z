@@ -14,7 +14,7 @@ public class LowerCase {
         String answer = "";
         for (int i = 0; i < s.length(); i++)
         {
-            if (s.charAt(i) > 64 && s.charAt(i) < 91){
+            if (s.charAt(i) > 64 && s.charAt(i) < 91){ //Limits the ASCII characters to uppercase
                 answer += (char)(s.charAt(i)+32);
             }
             else{

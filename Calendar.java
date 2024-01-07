@@ -29,7 +29,6 @@ public class Calendar {
 				answer += (" Sunday");
 			}
 			System.out.println(answer);
-			
 	 		advance();
 	 		debugDaysCounter++;
 	 		//// If you want to stop the loop after n days, replace the condition of the
@@ -52,7 +51,7 @@ public class Calendar {
 			dayOfWeek++;
 		}
 		if (nDaysInMonth(month,year) == dayOfMonth ){
-			if (month == 12){
+			if (month == 12){ 
 				year++;
 				month = 1;
 			}

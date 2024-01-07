@@ -20,7 +20,7 @@ public class UniqueChars {
                 }
             }
             if (count == 0){
-                answer+= s.charAt(i);
+                answer += s.charAt(i);
             }
             count = 0;
         }
